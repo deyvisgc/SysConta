@@ -89,7 +89,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <li><a href="#dv_entradas" data-toggle="tab" id="a_entradas">Entradas</a></li>
                                 <li class="active"><a href="#dv_existencias" data-toggle="tab" id="a_general">Existencias</a></li>
                                 <li class="pull-left header" id="pro_nombre" style="color:white;"><i class="fa fa-calculator"></i></li>
-                            </ul>
+								<li class="pull-left header" id="idproducto" style="color:white;"><i class="fa fa-calculator"></i></li>
+
+							</ul>
                             <div class="tab-content">
                                 <div class="tab-pane active" id="dv_existencias">
                                     <div class="row">

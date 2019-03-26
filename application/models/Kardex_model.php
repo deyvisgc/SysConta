@@ -75,7 +75,7 @@ class Kardex_model extends CI_Model
     function Kardex_Salidas_Total($idprodcuto)
     {
         $query = $this->db->query(
-            "SELECT FORMAT(ROUND(SUM(sd.sad_cantidad * sd.sad_valor),1),2) as total_salidas,p.pro_nombre 
+            "SELECT FORMAT(ROUND(SUM(sd.sad_cantidad * sd.sad_valor),1),2) as total_salidas,p.pro_nombre,p.pro_id_producto 
             FROM producto as p, salida as sal, salida_detalle as sd
             WHERE sal.sal_id_salida=sd.sal_id_salida
             AND p.pro_id_producto = sd.pro_id_producto

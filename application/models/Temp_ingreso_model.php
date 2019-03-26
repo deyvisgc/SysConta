@@ -105,8 +105,9 @@ class Temp_ingreso_model extends CI_Model
         $list = array();
         $query = $this->db->query("select 
 			  pro.pro_id_producto, 
-			  pro.pro_nombre, 
-			  unm.unm_id_unidad_medida, 
+	  CONCAT(pro.pro_nombre,'(',pro_lote,')') as nombre, 			  
+       unm.unm_id_unidad_medida, 
+       pro.pro_nombre,
 			  unm.unm_nombre_corto, 
 			  pro.pro_val_compra, 
 			  pro.pro_cantidad, 
@@ -125,7 +126,7 @@ class Temp_ingreso_model extends CI_Model
 			  pro.pro_id_producto not in (SELECT t.pro_id_producto FROM temp t WHERE t.temp_tipo_movimiento='INGRESO' AND t.usu_id_usuario=" . $usu_id_usuario . ") 
 			order by pro.pro_nombre ");
         foreach ($query->result() as $row) {
-            $row->value = $row->pro_nombre;
+            $row->value = $row->nombre;
             $list[] = $row;
         }
         return $list;
