@@ -55,6 +55,17 @@ function ListarActivosNorrientes(){
 	return $query->result_array();
 
 }
+function RegistrarAsiento1($data){
+	return $this->db->insert('asientos_contables', $data);
+}
+function ListarAsientos1(){
+	$query = $this->db->query("SELECT * FROM  asientos_contables order  by  idcuenta desc ");
+	return $query->result_array();
+}
+function ListarHaberAsientos1(){
+	$query = $this->db->query("SELECT SUM(debe) as haber FROM asientos_contables order by idcuenta desc");
+	return $query->row_array();
+}
 
 
 
