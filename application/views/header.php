@@ -9,6 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="icon" type="image/png" href="<?= base_url() ?>../imagen/gvm.ico" />
 
+
     <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css"> -->
     <link rel="stylesheet" href="<?= base_url() ?>../resources/css/ui-1-12-1/jquery-ui.css">
@@ -26,6 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond3.min.js"></script>
+
     <![endif]-->
     <link rel="stylesheet" href="<?= base_url() ?>../resources/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>../resources/css/systyle.css">
@@ -104,7 +106,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>S</b>M</span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><b>PUNTO</b> DE VENTA</span>
+            <span class="logo-lg"><b>SYS</b> CONTA</span>
         </a>
         <!-- Header Navbar -->
         <nav class="navbar navbar-static-top" role="navigation" style="background-color:#337ab7; ">
@@ -146,19 +148,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </ul><!-- /.menu -->
                             </li>
                         </ul>
-                        <?php /* ?>
-								<ul class="dropdown-menu">
-									<li class="header">Centro de Soporte:</li>
-									<li>
-										<!-- Inner Menu: contains the notifications -->
-										<ul class="menu">
-											<li>Correo: </li>
-											<li>Telefono: </li>
-										</ul>
-									</li>
-									<!--<li class="footer"><a href="#">View all</a></li>-->
-								</ul>
-								<?php */ ?>
+
                     </li>
 
                     <!-- Notifications Menu -->
@@ -218,7 +208,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </li>-->
                             <!-- Menu Footer-->
                             <li class="user-footer">
-                                <a href="#!" class="btn btn-info btn-block clss_a_show_perfil"><i class='fa fa-user'></i> Perfil</a>
+                                <a href="holakaka" class="btn btn-info btn-block "><i class='fa fa-user'></i> Perfil</a>
                                 <a href="<?= base_url() ?>logueo/salir" class="btn btn-danger btn-block btn-exit-system"><i class='fa fa-power-off'></i> Salir</a>
                             </li>
                         </ul>

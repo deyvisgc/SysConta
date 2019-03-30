@@ -14,9 +14,10 @@ immediately after the control sidebar -->
 </div><!-- ./wrapper -->
 
 <div class="MsjAjaxForm"></div>
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <!-- jQuery 3.1.1 -->
 <script src="<?= base_url() ?>../resources/js/jquery-3.1.1.min.js"></script>
+
 <!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
